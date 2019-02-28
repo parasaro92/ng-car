@@ -1,0 +1,57 @@
+<div ng-controller="CarsCtrl">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 left">  
+        <h2>Styles</h2>
+        <h2>{{selected_car.name}}</h2>
+        <img src="{{selected_car.image}}" alt="">
+      
+        <div class="col-md-12 d-flex justify-center">
+          <!-- <div class="col-md-6"></div> -->
+          <div class="col-md-1" ng-repeat="car in carsData">
+            <a id="{{car.id}}" ng-click="selectCar(car)"></a>
+          </div>
+        </div>
+        <p class="d-flex justify-center">{{selected_car.label}}</p>
+      
+      </div>
+      <div class="col-md-4 left">
+        <h2>Rating</h2>
+        <h4 class="mb5">Critic's Rating</h4>
+        <div class="w80 left" id="critic" aria-valuenow="40"></div>
+        <span class="ml10">{{selected_car.critic}}</span>
+
+        <h4 class="mb5">Interior</h4>
+        <div class="w80 left" id="interior"></div>
+        <span class="ml10">{{selected_car.interior}}</span>
+
+        <h4 class="mb5">Performance</h4>
+        <div class="w80 left" id="performance"></div>
+        <span class="ml10">{{selected_car.performance}}</span>
+
+        <h4 class="mb5">Safety</h4>
+        <div class="w80 left" id="safety"></div>
+        <span class="ml10">{{selected_car.safety}}</span>
+
+        <h4 class="mb5">Reliability</h4>
+        <div class="w80 left" id="reliability"></div>
+        <span class="ml10">{{selected_car.reliability}}</span>
+      </div>
+      
+      <div class="outer">
+        <div id="container-speed" class="chart-container"></div>
+      </div>
+
+    </div>
+    <md-content class="md-padding white" layout-xs="column" layout="row">
+      <div flex-xs flex-gt-xs="20" layout="column" ng-repeat="car in carsData">
+        <md-card>
+          <img ng-src="{{car.image}}" width="50" class="md-card-image">
+          <h3 class="d-flex justify-center m-0">Swift</h3>
+          <h3 class="rating_car justify-center m-0 d-flex">8.1</h3>
+        </md-card>
+      </div>
+    </md-content>
+  </div>
+
+</div>

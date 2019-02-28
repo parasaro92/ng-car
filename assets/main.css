@@ -1,0 +1,161 @@
+.white, body {
+  background: #fff;
+}
+
+#red {
+  background-color: red;
+  border-radius: 12px;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  border: 1px solid #000;
+}
+
+#black {
+  background-color: black;
+  border-radius: 12px;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  border: 1px solid #000;
+}
+
+#blue {
+  background-color: blue;
+  border-radius: 12px;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  border: 1px solid #000;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.left {
+  float: left;
+}
+
+.ml10 {
+  margin-left: 10px
+}
+
+.ui-widget-header {
+  border: 1px solid #dddddd;
+  /* background: yellow; */
+  color: #333333;
+  font-weight: bold;
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid yellow;
+  background: lightgoldenrodyellow;
+  border-radius: 10px;
+}
+
+.ui-progressbar {
+  height: 1em;
+}
+
+.mb5 {
+  margin-bottom: 5px; 
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.custom_icon {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 3px !important;
+  height: 15px;
+  margin: 5px;
+  padding: 3px;
+  padding-left: 3px !important;
+}
+
+.outer {
+	/* width: 600px; */
+	height: 400px;
+	margin: 0 auto;
+}
+.outer .chart-container {
+	width: 300px;
+	float: left;
+  height: 200px;
+  margin-top: 100px;
+}
+.highcharts-yaxis-grid .highcharts-grid-line {
+	display: none;
+}
+
+.rating_car {
+  margin-bottom: 0;
+  background: lightblue;
+  color: white;
+  padding: 5px 0;
+}
+
+
+@media (min-width: 992px) {
+  
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    /* flex: 0 0 83.333333%;
+    max-width: 2.333333%; */
+    position: relative;
+    /* width: 100%; */
+    min-height: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .outer {
+    width: 100%;
+    height: 400px;
+  }
+  .outer .chart-container {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
+
+}
